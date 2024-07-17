@@ -1,0 +1,208 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1149.3333333333333,1783.3333333333333" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:um="clr-namespace:UiPath.Mail;assembly=UiPath.Mail.Activities" xmlns:umab="clr-namespace:UiPath.Mail.Activities.Business;assembly=UiPath.Mail.Activities" xmlns:umabh="clr-namespace:UiPath.Mail.Activities.Business.HtmlEditor;assembly=UiPath.Mail.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>UiPath.Mail</x:String>
+      <x:String>UiPath.Mail.Activities.Business</x:String>
+      <x:String>UiPath.Shared.Activities.ConnectionService.Contracts</x:String>
+      <x:String>UiPath.Mail.Activities</x:String>
+      <x:String>UiPath.Mail.Activities.Utils</x:String>
+      <x:String>UiPath.Mail.Activities.Business.HtmlEditor</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="710,1718.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Todays Gold Rate in Tirunelveli, 18, 22 &amp; 24 Carat Gold Price on 16th Jul 2024 -" sap:VirtualizedContainerService.HintSize="648,1630.6666666666667" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="980cbc0a-33be-4a07-b674-86573364e10e" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="592,1388.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="today_value" />
+              <Variable x:TypeArguments="x:String" Name="yesterday_value" />
+              <Variable x:TypeArguments="x:String" Name="difference_value" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NGetText DisplayName="Get Text 'Today 24'" sap:VirtualizedContainerService.HintSize="530,191.33333333333334" sap2010:WorkflowViewState.IdRef="NGetText_3" ScopeIdentifier="980cbc0a-33be-4a07-b674-86573364e10e" TextString="[today_value]" Version="V3">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.goodreturns.in/gold-rates/tirunelveli.html" DesignTimeRectangle="407, 451, 282, 75" DesignTimeScaleFactor="1.5" ElementType="Text" FullSelectorArgument="&lt;webctrl idx='2' tag='TABLE' /&gt;&lt;webctrl tableCol='2' tableRow='2' tag='TD' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' class='' tag='TD' /&gt;" Guid="eda234ee-2e4c-4852-8024-7eee557a36d1" InformativeScreenshot="8837e4fa7aff7979e468d679644dc261.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Todays Gold Rate in Tirunelveli, 18, 22 &amp;amp; 24 Carat Gold Price on 16th Jul 2024 - Goodreturns' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="2">
+                      <uix:Target DesignTimeRectangle="213, 309, 990, 66" ElementType="Text" FullSelectorArgument="&lt;webctrl idx='2' tag='H2' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tag='H2' class='table-headLine' aaname='Today 24 Carat Gold Rate Per Gram in Tirunelveli (INR)' check:innerText='Today 24 Carat Gold Rate Per Gram in Tirunelveli (INR)' /&gt;" Guid="d551e519-fb90-40bf-8bb2-64794618ab14" SearchSteps="FuzzySelector" />
+                      <uix:Target DesignTimeRectangle="407, 375, 282, 76" ElementType="Text" FullSelectorArgument="&lt;webctrl idx='2' tag='TABLE' /&gt;&lt;webctrl aaname='Today' tableRow='1' tag='TH' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl aaname='Today' type='' tag='TH' class='' check:innerText='Today' /&gt;" Guid="dc3814d7-9e3a-43ac-a333-17172b1c0bda" SearchSteps="FuzzySelector" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NGetText.Target>
+            </uix:NGetText>
+            <uix:NGetText DisplayName="Get Text 'Today 24'" sap:VirtualizedContainerService.HintSize="530,191.33333333333334" sap2010:WorkflowViewState.IdRef="NGetText_4" ScopeIdentifier="980cbc0a-33be-4a07-b674-86573364e10e" TextString="[yesterday_value]" Version="V3">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.goodreturns.in/gold-rates/tirunelveli.html" DesignTimeRectangle="689, 451, 283, 75" DesignTimeScaleFactor="1.5" ElementType="Text" FullSelectorArgument="&lt;webctrl idx='2' tag='TABLE' /&gt;&lt;webctrl tableCol='3' tableRow='2' tag='TD' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' class='' tag='TD' /&gt;" Guid="25792c95-11df-4450-b1d7-45af217f7c51" InformativeScreenshot="1df655425320d1db1a7fb43079ae9f17.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Todays Gold Rate in Tirunelveli, 18, 22 &amp;amp; 24 Carat Gold Price on 16th Jul 2024 - Goodreturns' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target DesignTimeRectangle="213, 309, 990, 66" ElementType="Text" FullSelectorArgument="&lt;webctrl idx='2' tag='H2' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tag='H2' class='table-headLine' aaname='Today 24 Carat Gold Rate Per Gram in Tirunelveli (INR)' check:innerText='Today 24 Carat Gold Rate Per Gram in Tirunelveli (INR)' /&gt;" Guid="ed723026-c93b-4aee-b0ac-4c19508e676c" SearchSteps="FuzzySelector" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NGetText.Target>
+            </uix:NGetText>
+            <uix:NGetText DisplayName="Get Text 'Today 24'" sap:VirtualizedContainerService.HintSize="530,191.33333333333334" sap2010:WorkflowViewState.IdRef="NGetText_5" ScopeIdentifier="980cbc0a-33be-4a07-b674-86573364e10e" TextString="[difference_value]" Version="V3">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.goodreturns.in/gold-rates/tirunelveli.html" DesignTimeRectangle="972, 451, 231, 75" DesignTimeScaleFactor="1.5" ElementType="Text" FullSelectorArgument="&lt;webctrl idx='2' tag='TABLE' /&gt;&lt;webctrl class='green-span' tableRow='2' tag='TD' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl class='green-span' type='' tag='TD' /&gt;" Guid="463a0fc7-e262-4b7e-9ed1-b4932281673a" InformativeScreenshot="22444919ac644fc491d0edea8ce2eccd.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Todays Gold Rate in Tirunelveli, 18, 22 &amp;amp; 24 Carat Gold Price on 16th Jul 2024 - Goodreturns' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target DesignTimeRectangle="213, 309, 990, 66" ElementType="Text" FullSelectorArgument="&lt;webctrl idx='2' tag='H2' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tag='H2' class='table-headLine' aaname='Today 24 Carat Gold Rate Per Gram in Tirunelveli (INR)' check:innerText='Today 24 Carat Gold Rate Per Gram in Tirunelveli (INR)' /&gt;" Guid="95adb3ae-d3c1-4331-97be-8c423ac17067" SearchSteps="FuzzySelector" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NGetText.Target>
+            </uix:NGetText>
+            <umab:GmailApplicationCard ClientId="{x:Null}" ClientSecret="{x:Null}" ConnectionAccountName="{x:Null}" ConnectionId="{x:Null}" Account="Please select an account" DisplayName="Use Gmail" sap:VirtualizedContainerService.HintSize="530,724" sap2010:WorkflowViewState.IdRef="GmailApplicationCard_2" Timeout="90" UseConnectionService="False">
+              <umab:GmailApplicationCard.Body>
+                <ActivityAction x:TypeArguments="um:IMailQuickHandle">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="um:IMailQuickHandle" Name="Gmail" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="496,510.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <umab:SendMailX Bcc="{x:Null}" Cc="{x:Null}" HtmlBodyFromText="{x:Null}" ReplyTo="{x:Null}" Account="[Gmail]" Body="[&quot;Today - &quot;+today_value+&quot;&#xA;&#xA;Yesterday - &quot;+yesterday_value+&quot;&#xA;&#xA;Difference - &quot;+difference_value]" BodyType="Text" DisplayName="Send Email" sap:VirtualizedContainerService.HintSize="434,422.6666666666667" sap2010:WorkflowViewState.IdRef="SendMailX_1" Importance="Normal" IsDraft="False" MaxBodyDocumentSizeMB="2" Sensitivity="Normal" Subject="[&quot;Gold rate &quot;+today_value]" To="sender" UseDocumentAsBody="False">
+                      <umab:SendMailX.Files>
+                        <scg:List x:TypeArguments="InArgument(x:String)" Capacity="0" />
+                      </umab:SendMailX.Files>
+                      <umab:SendMailX.HtmlBodyFromFile>
+                        <umabh:HtmlContentArgument HtmlBody="{x:Null}" FilePath=".data/HtmlContent0.html">
+                          <umabh:HtmlContentArgument.RuntimeImages>
+                            <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
+                          </umabh:HtmlContentArgument.RuntimeImages>
+                          <umabh:HtmlContentArgument.ValueMappings>
+                            <scg:List x:TypeArguments="umabh:HtmlValueMappingBase" Capacity="0" />
+                          </umabh:HtmlContentArgument.ValueMappings>
+                        </umabh:HtmlContentArgument>
+                      </umab:SendMailX.HtmlBodyFromFile>
+                    </umab:SendMailX>
+                  </Sequence>
+                </ActivityAction>
+              </umab:GmailApplicationCard.Body>
+              <umab:GmailApplicationCard.EmailAddress>
+                <InArgument x:TypeArguments="x:String">
+                  <Literal x:TypeArguments="x:String" Value="" />
+                </InArgument>
+              </umab:GmailApplicationCard.EmailAddress>
+            </umab:GmailApplicationCard>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-11, -11, 1942, 1030" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAGWSURBVDhPY/j//z8Y//v0WvRLvdnLLyXK/wnh32c3RsH0wQ34feOQ64+tXa1gvLGl79uk4ONfipX/gjWVqvz9saGpDyT36+DcfJgeFAOw4d+Xd/p/KVP7BTLk5/5ZRdjUwBn/fnzhAdp67Gubwx1k/KVc4wfYFVW6n2Bivy9uC8Uw4Pel7QHfF+euQMdfO12vgQz42mj+FMT/sa5h4r+/f+H64Axc+NuM2J1gL+yY0IhNHkMAhkG2/Nw3oxwckE3Wj/99fS+ETR2cAVQgCLSl7ufuyTU/1tRO+9rudAtk87d+v9N/X91TRdaEjOGMv28fy4MDC+TfHs8LP7f3Nf65d9oGWTE2jML5vrRgCdiQGoN3f1/c0kSWw4VROP9+/WD/NiXsENgV7U63cfkbGWMI/PvyVgSkGez/GdF7//35zYyuBhljFfz78o7al1qjtyBDvgMDFJsaGMYqCMJ/bh+3h6bCv7+OLM7CpgaEsQrC8K/Ta+NABnwpVfv159ZRZ2xqMATQ8Y/tfc0gr4C89PfjKwlU+f8MAFA03X9OaopNAAAAAElFTkSuQmCC" InformativeScreenshot="8bf564da1ffff86c5ba200e4bc269590.jpg" Selector="&lt;html app='chrome.exe' title='Todays Gold Rate in Tirunelveli, 18, 22 &amp;amp; 24 Carat Gold Price on 16th Jul 2024 - Goodreturns' /&gt;" Title="Todays Gold Rate in Tirunelveli, 18, 22 &amp; 24 Carat Gold Price on 16th Jul 2024 - Goodreturns" Url="https://www.goodreturns.in/gold-rates/tirunelveli.html" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
